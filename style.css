@@ -1,3 +1,45 @@
+/* CSS for screens smaller than 768px (tablets and phones) */
+@media (max-width: 767px) {
+  form {
+    width: 90%; /* decrease form width to fit smaller screens */
+  }
+  
+  input[type="number"], select {
+    font-size: 14px; /* decrease font size for smaller screens */
+  }
+
+  .result {
+    width: 90%; /* decrease result width to fit smaller screens */
+    font-size: 18px; /* decrease font size for smaller screens */
+  }
+
+  /* show the menu when the burger menu is clicked */
+  #menu {
+    transform: translateX(0);
+  }
+}
+
+/* CSS for screens larger than 768px (desktops and laptops) */
+@media (min-width: 768px) {
+  form {
+    width: 50%; /* set form width back to 50% for larger screens */
+  }
+
+  input[type="number"], select {
+    font-size: 16px; /* set font size back to 16px for larger screens */
+  }
+
+  .result {
+    width: 50%; /* set result width back to 50% for larger screens */
+    font-size: 20px; /* set font size back to 20px for larger screens */
+  }
+
+  /* hide the menu by default */
+  #menu {
+    display: none;
+  }
+}
+
 body {
 	font-family: Arial, sans-serif;
 	background-color: #f0f0f0;
