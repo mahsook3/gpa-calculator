@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GPA Calculator</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+  <img src="./img/logo.png">
+  <div id="burgermenu">
+    <div class="line" id="nr1"></div>
+    <div class="line" id="nr2"></div>
+    <div class="line" id="nr3"></div>
+  </div>
+  <div id="menu">
+    <ul>
+      <a href="https://github.com/mahsook3"><h4>@mahsook3</h4></a>
+      <img src="./img/dp.png">
+      <a href="https://github.com/mahsook3"><img src="./img/dp.png"></a>
+    </ul>
+  </div>
+</header>
+<div id="content">
+    <br>
+	<form id="gpa-form">
+		<label for="num-subjects">Number of Subjects:</label>
+		<input type="number" id="num-subjects" name="num-subjects" min="1" required>
+
+		<div id="subject-fields"></div>
+
+		<input type="submit" value="Calculate GPA">
+	</form>
+		<div id="result" class="result"></div>
+    <div class="url">
+        <p>For Subjects credit <a href="https://drive.google.com/file/d/1oVN7kcUqE8ttRJFepyN9Dlfe6n0nGzjx/view?usp=drivesdk">Click Here!</a></p>
+    </div>
+</div>
+<div class="instructions">
+    <ul>
+        <li>Enter the number of subjects you want to calculate the GPA for in the "Number of Subjects" field.</li>
+        <li>For each subject, enter the grade you received and the credit hours for the course in the fields that appear.</li>
+        <li>Click the "Calculate GPA" button again to see your calculated GPA.</li>
+        <li>Your GPA will be displayed in the "Result" section below the form.</li>
+      </ul>
+</div>
+<footer>
+
+  <div id="line"></div>
+  <h3>©mahsook3</h3>
+
+</footer>
+	<script src="script.js"></script>
+    
+</body>
+</html>
